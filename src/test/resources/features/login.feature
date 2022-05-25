@@ -5,12 +5,12 @@ Feature: Flujo de ingreso
   @Ltest02
   Scenario: Ingreso y logueo en la web
     Given Validar que la web este operativa
-    When Ingresa las credenciales "cupe@mail.com" y "Qull@2021"
+    When Ingresa las credenciales "example@mail.com" y "Qull@2021"
     Then mostrar logueo exitoso
 
   @test02
   Scenario: Ingreso y logueo en la web con datos incorrectos
     Given Validar que la web este operativa
-    When Ingresa las credenciales "cupe.com" y "2021"
+    When Ingresa las credenciales "example.com" y "2021"
     Then mostrar logueo fallido
 
